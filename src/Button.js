@@ -8,4 +8,4 @@ class Button extends Component{
     }
 }
 
-export default Component;
+export default Button;
