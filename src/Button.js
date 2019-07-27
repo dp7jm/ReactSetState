@@ -19,24 +19,13 @@ class Button extends Component {
                 <div>{this.state.randomnumber}</div>
                 {this.state.randomnumber === 7 ? <div>winner</div> :
                     <div>
-                    <div>{this.state.randomnumber}</div> 
-                    <button
-                    onClick={this.randomNum}>
-                    Clik me
+                        <div>{this.state.randomnumber}</div>
+                        <button
+                            onClick={this.randomNum}>
+                            Clik me
                     </button>
                     </div>
                 }
-                {/* {if (this.state.randomnumber === 7) {
-                    <div>winner</div>
-                }
-                else {
-                    <button
-                        onClick={this.randomNum}>
-                        Clik me
-                    </button>
-                }
-                } */}
-
             </div>
         )
     }
