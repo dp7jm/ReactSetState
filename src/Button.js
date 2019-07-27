@@ -3,10 +3,7 @@ import React, { Component } from 'react';
 class Button extends Component{
     render(){
         return (
-            <div>
-
-
-            </div>
+                <Button onClick= {console.log(2)}>Clik me</Button>
         )
     }
 }
