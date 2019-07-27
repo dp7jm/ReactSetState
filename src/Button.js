@@ -16,12 +16,27 @@ class Button extends Component {
     render() {
         return (
             <div>
-                {/* <div>{this.randomNum()}</div> */}
                 <div>{this.state.randomnumber}</div>
-                <button
+                {this.state.randomnumber === 7 ? <div>winner</div> :
+                    <div>
+                    <div>{this.state.randomnumber}</div> 
+                    <button
                     onClick={this.randomNum}>
                     Clik me
-                </button>
+                    </button>
+                    </div>
+                }
+                {/* {if (this.state.randomnumber === 7) {
+                    <div>winner</div>
+                }
+                else {
+                    <button
+                        onClick={this.randomNum}>
+                        Clik me
+                    </button>
+                }
+                } */}
+
             </div>
         )
     }
